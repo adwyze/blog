@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
+import logo from "../assets/images/logo.svg"
+
 import './index.css'
 
 const Header = () => (
@@ -19,7 +21,7 @@ const Header = () => (
         padding: '1.45rem 1.0875rem',
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <div className="logo" style={{ margin: 0 }}>
         <Link
           to="/"
           style={{
@@ -27,9 +29,11 @@ const Header = () => (
             textDecoration: 'none',
           }}
         >
-          Gatsby
+          <img src={logo} style={{
+            marginBottom: 0
+          }}/>
         </Link>
-      </h1>
+      </div>
     </div>
   </div>
 )
