@@ -1,13 +1,13 @@
-import React from "react";
-import Link from "gatsby-link";
-import Helmet from "react-helmet";
+import React from "react"
+import Link from "gatsby-link"
+import Helmet from "react-helmet"
 
 import { PreviewList } from "../ui"
 
 // import '../css/index.css'; // add some style if you want!
 
 export default function Index({ data }) {
-  const { edges: posts } = data.allMarkdownRemark;
+  const { edges: posts } = data.allMarkdownRemark
   return (
     <PreviewList.Wrapper>
       {posts
@@ -15,20 +15,16 @@ export default function Index({ data }) {
         .map(({ node: post }) => {
           return (
             <PreviewList.Item key={post.id}>
-<PreviewList.Title>
+              <PreviewList.Title>
                 <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>
-                </PreviewList.Title>
-                <PreviewList.Meta>
-              {post.frontmatter.date}
-              </PreviewList.Meta>
-              <PreviewList.Excerpt>
-              {post.excerpt}
-              </PreviewList.Excerpt>
-              </PreviewList.Item>
-          );
+              </PreviewList.Title>
+              <PreviewList.Meta>{post.frontmatter.date}</PreviewList.Meta>
+              <PreviewList.Excerpt>{post.excerpt}</PreviewList.Excerpt>
+            </PreviewList.Item>
+          )
         })}
     </PreviewList.Wrapper>
-  );
+  )
 }
 
 export const pageQuery = graphql`
@@ -47,4 +43,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

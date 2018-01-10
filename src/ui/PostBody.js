@@ -1,6 +1,5 @@
 import styled from "styled-components"
 
-const PostBody = styled.div`
-`;
+const PostBody = styled.div``
 
-export default PostBody;
+export default PostBody

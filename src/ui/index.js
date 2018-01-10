@@ -4,9 +4,4 @@ import PostTitle from "./PostTitle"
 import PostBody from "./PostBody"
 import * as PreviewList from "./PreviewList"
 
-export {
-  BlogHeader,
-  PostBody,
-  PostTitle,
-  PreviewList
-}
+export { BlogHeader, PostBody, PostTitle, PreviewList }
