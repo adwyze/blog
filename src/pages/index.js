@@ -4,8 +4,6 @@ import Helmet from "react-helmet"
 
 import { PreviewList } from "../ui"
 
-// import '../css/index.css'; // add some style if you want!
-
 export default function Index({ data }) {
   const { edges: posts } = data.allMarkdownRemark
   return (
