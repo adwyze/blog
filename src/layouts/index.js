@@ -3,11 +3,9 @@ import PropTypes from "prop-types"
 import Link from "gatsby-link"
 import Helmet from "react-helmet"
 
-import { BlogHeader } from "../ui"
+import { BlogHeader, Button } from "../ui"
 
 import logo from "../assets/images/logo.svg"
-
-import "./index.css"
 
 const Header = () => (
   <BlogHeader>
@@ -15,7 +13,10 @@ const Header = () => (
       style={{
         margin: "0 auto",
         maxWidth: 960,
-        padding: "1.45rem 1.0875rem",
+        padding: "1.5rem 1rem",
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
       }}>
       <div className="logo" style={{ margin: 0 }}>
         <Link
@@ -32,6 +33,9 @@ const Header = () => (
           />
         </Link>
       </div>
+      <a href="https://granularhq.com">
+        <Button>Go to GranularHQ.com</Button>
+      </a>
     </div>
   </BlogHeader>
 )
