@@ -3,17 +3,14 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
+import { BlogHeader } from "../ui"
+
 import logo from "../assets/images/logo.svg"
 
 import './index.css'
 
 const Header = () => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
+  <BlogHeader>
     <div
       style={{
         margin: '0 auto',
@@ -35,7 +32,7 @@ const Header = () => (
         </Link>
       </div>
     </div>
-  </div>
+    </BlogHeader>
 )
 
 const TemplateWrapper = ({ children }) => (
