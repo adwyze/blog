@@ -43,10 +43,14 @@ const Header = () => (
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Gatsby Default Starter"
+      title="Granular Blog"
       meta={[
-        { name: "description", content: "Sample" },
-        { name: "keywords", content: "sample, something" },
+        { name: "description", content: "marketing insights for humans" },
+        {
+          name: "keywords",
+          content:
+            "marketing, visualisation, granular, ads, tableau, data studio, quicksight",
+        },
       ]}
     />
     <Header />
