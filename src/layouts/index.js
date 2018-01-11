@@ -5,7 +5,7 @@ import Helmet from "react-helmet"
 
 import { BlogHeader, Button } from "../ui"
 
-import logo from "../assets/images/logo.svg"
+import logo from "../assets/images/logo.png"
 
 const Header = () => (
   <BlogHeader>
