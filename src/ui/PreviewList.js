@@ -1,12 +1,11 @@
 import styled from "styled-components"
 
-const Wrapper = styled.div`
-  padding: 30px 20px;
-  border-bottom: 1px solid #efefef;
-`
+const Wrapper = styled.div``
 
 const Item = styled.div`
   margin-bottom: 1rem;
+  padding: 30px 20px;
+  border-bottom: 1px solid #efefef;
 `
 
 const Title = styled.h1`
