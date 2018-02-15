@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `The Adwyze Blog`,
+    title: `Granular Blog`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
