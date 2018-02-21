@@ -1,6 +1,6 @@
 import React from "react"
 import Helmet from "react-helmet"
-import { PostContainer, PostTitle, PostBody } from "../ui"
+import { PostContainer, PostTitle, PostBody, PostMeta } from "../ui"
 
 // import '../css/blog-post.css'; // make it pretty!
 
@@ -14,6 +14,7 @@ export default function Template({
       <PostTitle>
         <h1>{post.frontmatter.title}</h1>
       </PostTitle>
+      <PostMeta>Published on {post.frontmatter.date}</PostMeta>
       <PostBody dangerouslySetInnerHTML={{ __html: post.html }} />
     </PostContainer>
   )

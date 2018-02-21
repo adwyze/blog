@@ -24,7 +24,7 @@ const Title = styled.h1`
 
 const Meta = styled.div`
   font-size: 12px;
-  color: #adadad;
+  color: #a1a1a1;
 `
 
 const Excerpt = styled.div`
