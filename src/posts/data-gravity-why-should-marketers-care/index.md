@@ -66,8 +66,9 @@ information that will allow you to understand why the photo looks the way it
 does. Is it too blurry? You can take one look at the shutter speed and
 understand why.
 
-![](https://cdn-images-1.medium.com/max/1600/0*3zg8iNZVAs9vYWFy.)
-
+<center>
+<img src="https://cdn-images-1.medium.com/max/1600/0*3zg8iNZVAs9vYWFy." />
+</center>
 Data by itself is useless. Applications need depth of context, in order to help
 marketers make sense out of it. **Adding context is what turns data into useful
 information**, which when combined with prior knowledge can help facilitate
