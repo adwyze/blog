@@ -1,7 +1,12 @@
 import styled from "styled-components"
 
 const PostBody = styled.div`
-  p {
+  p,
+  li,
+  code,
+  pre,
+  span,
+  div {
     font-size: 16px;
   }
 `
