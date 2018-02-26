@@ -6,7 +6,9 @@ description: "How is Data Gravity relevant for the performance marketers of toda
 robots: "index, follow"
 ---
 
-![](https://cdn-images-1.medium.com/max/1600/0*7cOtiIi_TFdMZZau.)
+![Illustration of data gravity for applications and services
+](https://cdn-images-1.medium.com/max/1600/0*7cOtiIi_TFdMZZau. "The effect of data gravity
+")
 
 Dave McCrory first introduced the concept of [Data
 Gravity](https://blog.mccrory.me/2010/12/07/data-gravity-in-the-clouds/) back in
@@ -69,7 +71,9 @@ does. Is it too blurry? You can take one look at the shutter speed and
 understand why.
 
 <center>
-<img src="https://cdn-images-1.medium.com/max/1600/0*3zg8iNZVAs9vYWFy." />
+<img src="https://cdn-images-1.medium.com/max/1600/0*3zg8iNZVAs9vYWFy." alt="Illustration of how data contextualized into information can be combined with knowledge to take action
+" title="Information is useful, data by itself is not
+" />
 </center>
 
 Data by itself is useless. Applications need depth of context, in order to help

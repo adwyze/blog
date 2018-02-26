@@ -36,7 +36,7 @@ The CRM industry essentially started with Siebel. Early naysayers called the CRM
 a “glorified database” which while technically accurate completely missed the
 value of context and workflows.
 
-![](https://cdn-images-1.medium.com/max/800/0*8bW2MgUia_mhecKo.png)
+![Illustration showing the evolution of CRM systems](https://cdn-images-1.medium.com/max/800/0*8bW2MgUia_mhecKo.png "The Evolution of CRM Systems")
 
 The next inflection point was the launch of Salesforce which was the first
 cloud-based solution and this was seminal in so many ways. Not only was it a big
@@ -52,7 +52,7 @@ just at a business function level but at an industry level.
 
 We are at a similar point of inflection for BI Platforms
 
-![](https://cdn-images-1.medium.com/max/800/0*HsgW8hlAzNmE6bOv.png)
+![Illustration showing the evolution of BI systems](https://cdn-images-1.medium.com/max/800/0*HsgW8hlAzNmE6bOv.png "The Evolution of BI Systems")
 
 With the launch of DOMO, we started seeing the move to cloud solutions from
 desktop licenses which is why I think we are close to the next stage of
@@ -78,7 +78,7 @@ with product teams and some knowledge of Marketing is a plus!
 You know how acute the problem is when you see folks at PPC forums asking
 questions like these.
 
-![](https://cdn-images-1.medium.com/max/800/0*YmuCL1T-UGzUgH4Y.png)
+![Snapshot of a comment from Reddit forums asking if PPC analysis is possible on more than 2 axes](https://cdn-images-1.medium.com/max/800/0*YmuCL1T-UGzUgH4Y.png "Should marketers be worrying about R, ggplot and multiple axes?")
 
 The value of vertical solutions can be seen by the success of Google Data Studio
 — unfortunately, it suffers the same limitations of other platforms the minute
