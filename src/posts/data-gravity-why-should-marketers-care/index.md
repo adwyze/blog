@@ -71,9 +71,10 @@ understand why.
 <center>
 <img src="https://cdn-images-1.medium.com/max/1600/0*3zg8iNZVAs9vYWFy." />
 </center>
+
 Data by itself is useless. Applications need depth of context, in order to help
-marketers make sense out of it. **Adding context is what turns data into useful
-information**, which when combined with prior knowledge can help facilitate
+marketers make sense out of it. Adding context is what turns data into useful
+information, which when combined with prior knowledge can help facilitate
 action. And this is exactly where Tableau, and even QuickSight and PowerBI fall
 flat. As BI tools that are horizontal solutions, they can ingest any dataset.
 But only an application with context can understand that quality score cannot
