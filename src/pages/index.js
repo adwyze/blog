@@ -7,21 +7,36 @@ import { PreviewList } from "../ui"
 export default function Index({ data }) {
   const { edges: posts } = data.allMarkdownRemark
   return (
-    <PreviewList.Wrapper>
-      {posts
-        .filter(post => post.node.frontmatter.title.length > 0)
-        .map(({ node: post }) => {
-          return (
-            <PreviewList.Item key={post.id}>
-              <PreviewList.Title>
-                <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>
-              </PreviewList.Title>
-              <PreviewList.Meta>{post.frontmatter.date}</PreviewList.Meta>
-              <PreviewList.Excerpt>{post.excerpt}</PreviewList.Excerpt>
-            </PreviewList.Item>
-          )
-        })}
-    </PreviewList.Wrapper>
+    <div>
+      <Helmet
+        title="Granular Insights Blog"
+        meta={[
+          { name: "description", content: "marketing insights for humans" },
+          {
+            name: "keywords",
+            content:
+              "marketing, visualisation, granular, ads, tableau, data studio, quicksight",
+          },
+        ]}
+      />
+      <PreviewList.Wrapper>
+        {posts
+          .filter(post => post.node.frontmatter.title.length > 0)
+          .map(({ node: post }) => {
+            return (
+              <PreviewList.Item key={post.id}>
+                <PreviewList.Title>
+                  <Link to={post.frontmatter.path}>
+                    {post.frontmatter.title}
+                  </Link>
+                </PreviewList.Title>
+                <PreviewList.Meta>{post.frontmatter.date}</PreviewList.Meta>
+                <PreviewList.Excerpt>{post.excerpt}</PreviewList.Excerpt>
+              </PreviewList.Item>
+            )
+          })}
+      </PreviewList.Wrapper>
+    </div>
   )
 }
 

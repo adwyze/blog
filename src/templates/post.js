@@ -10,7 +10,19 @@ export default function Template({
   const { markdownRemark: post } = data // data.markdownRemark holds our post data
   return (
     <PostContainer>
-      <Helmet title={`${post.frontmatter.title} - Granular Blog`} />
+      <Helmet
+        title={`${post.frontmatter.title} - Granular Insights Blog`}
+        meta={[
+          {
+            name: "description",
+            content: post.frontmatter.description,
+          },
+          {
+            name: "robots",
+            content: post.frontmatter.robots,
+          },
+        ]}
+      />
       <PostTitle>
         <h1>{post.frontmatter.title}</h1>
       </PostTitle>
@@ -28,6 +40,8 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
+        description
+        robots
       }
     }
   }

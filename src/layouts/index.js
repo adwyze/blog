@@ -42,17 +42,6 @@ const Header = () => (
 
 const TemplateWrapper = ({ children }) => (
   <div>
-    <Helmet
-      title="Granular Blog"
-      meta={[
-        { name: "description", content: "marketing insights for humans" },
-        {
-          name: "keywords",
-          content:
-            "marketing, visualisation, granular, ads, tableau, data studio, quicksight",
-        },
-      ]}
-    />
     <Header />
     <div
       style={{
