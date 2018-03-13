@@ -81,7 +81,7 @@ We really wanted to go after these limitations.
 data to weeks, months or quarter? Easy peasy.
 * Want to actually look at the creatives running on your channels and break down
 performance by region, audience or campaigns? Done and done!
-* Would you like to see FB Pixel No.s and compare with Google Analytics/BigQuery
+* Would you like to see FB Pixel metrics and compare with Google Analytics/BigQuery
 or Appsflyer all in one table? You got it!
 * Want to create your own metrics to see how you are measuring up to your monthly
 targets? All in one place.
@@ -100,10 +100,10 @@ presumptuous to say that we have are the best product out there for marketing
 reporting, if you do decide to give Granular a spin, we are sure you will
 appreciate the level of detail that went into building it.
 
-We are working with a mix of clients like one of the world’s largest performance
-agency, some of the fastest growing e-tailers, education and streaming
-providers. The fact that our customers come from different categories and
-regions tells us that we are solving a global problem, if you want to give us a
+We are working with a diverse mix of clients - like one of the world’s largest performance
+agencies, some of the fastest growing e-tailers, education and streaming
+providers, etc. The fact that our customers come from different categories and
+regions tells us that we are solving a global problem. If you want to give us a
 go, [write to us](mailto:sales@granularhq.com)!
 
 *This post was written by [Arun
