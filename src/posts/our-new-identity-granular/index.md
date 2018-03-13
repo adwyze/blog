@@ -1,4 +1,11 @@
-# Our New Identity — Granular
+---
+path: "/our-new-identity-granular"
+date: "2018-03-12"
+title: "Our New Identity - Granular"
+description: "Launch of Granular's new brand identity and user interface"
+robots: "index, follow"
+---
+# Our New Identity - Granular
 
 We have all been there. You stay up all night preparing the presentation for
 your monthly marketing review and you show up thinking you have every question
