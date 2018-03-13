@@ -103,7 +103,7 @@ appreciate the level of detail that went into building it.
 We are working with a mix of clients like one of the world’s largest performance
 agency, some of the fastest growing e-tailers, education and streaming
 providers. The fact that our customers come from different categories and
-regions tells us that we are solving a global program, if you want to give us a
+regions tells us that we are solving a global problem, if you want to give us a
 go, [write to us](mailto:sales@granularhq.com)!
 
 *This post was written by [Arun
