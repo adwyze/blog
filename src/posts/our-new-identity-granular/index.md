@@ -2,7 +2,7 @@
 path: "/our-new-identity-granular"
 date: "2018-03-12"
 title: "Our New Identity - Granular"
-description: "Launch of Granular's new brand identity and user interface"
+description: "Announcement of Granular's new brand identity and user interface by founder and CEO Arun Srinivasan. What are the problems that Granular is solving for marketers?"
 robots: "index, follow"
 ---
 
