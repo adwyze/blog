@@ -5,7 +5,6 @@ title: "Our New Identity - Granular"
 description: "Launch of Granular's new brand identity and user interface"
 robots: "index, follow"
 ---
-# Our New Identity - Granular
 
 We have all been there. You stay up all night preparing the presentation for
 your monthly marketing review and you show up thinking you have every question
@@ -107,6 +106,6 @@ providers. The fact that our customers come from different categories and
 regions tells us that we are solving a global program, if you want to give us a
 go, [write to us](mailto:sales@granularhq.com)!
 
-*This post was written by *[Arun
-Srinivasan](https://www.linkedin.com/in/arun-srinivasan/)*, the founder and CEO
+*This post was written by [Arun
+Srinivasan](https://www.linkedin.com/in/arun-srinivasan/), the founder and CEO
 of Granular.*
