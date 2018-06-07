@@ -5,7 +5,7 @@ import Helmet from "react-helmet"
 
 import { BlogHeader, Button } from "../ui"
 
-import logo from "../assets/images/logo.png"
+import logo from "../assets/images/Clarisights-blog-logo.svg"
 
 const Header = () => (
   <BlogHeader>
@@ -18,7 +18,12 @@ const Header = () => (
         justifyContent: "space-between",
         alignItems: "center",
       }}>
-      <div className="logo" style={{ margin: 0 }}>
+      <div
+        className="logo"
+        style={{
+          margin: 0,
+          width: 180,
+        }}>
         <Link
           to="/"
           style={{
@@ -33,9 +38,29 @@ const Header = () => (
           />
         </Link>
       </div>
-      <a href="https://granularhq.com">
-        <Button>Go to GranularHQ.com</Button>
-      </a>
+      <div>
+        <Link
+          to="/category/growth"
+          style={{
+            margin: "0 10px",
+          }}>
+          <Button>Growth</Button>
+        </Link>
+        <Link
+          to="/category/engineering"
+          style={{
+            margin: "0 10px",
+          }}>
+          <Button> Engineering </Button>
+        </Link>
+        <Link
+          to="/category/design"
+          style={{
+            margin: "0 10px",
+          }}>
+          <Button> Design </Button>
+        </Link>
+      </div>
     </div>
   </BlogHeader>
 )
@@ -50,8 +75,9 @@ const TemplateWrapper = ({ children }) => (
         padding: "0px 1.0875rem 1.45rem",
         paddingTop: 0,
       }}>
-      {children()}
-    </div>
+      {" "}
+      {children()}{" "}
+    </div>{" "}
   </div>
 )
 

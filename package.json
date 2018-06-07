@@ -1,8 +1,8 @@
 {
-  "name": "granularblog",
-  "description": "the weblog",
+  "name": "clarisightsblog",
+  "description": "",
   "version": "1.0.0",
-  "author": "Nishant Arora <@nshntarora>",
+  "author": "",
   "dependencies": {
     "gatsby": "^1.9.145",
     "gatsby-link": "^1.6.32",

@@ -4,6 +4,7 @@ date: "2018-03-12"
 title: "Our New Identity - Granular"
 description: "Announcement of Granular's new brand identity and user interface by founder and CEO Arun Srinivasan. What are the problems that Granular is solving for marketers?"
 robots: "index, follow"
+tags: ["growth"]
 ---
 
 We have all been there. You stay up all night preparing the presentation for
@@ -78,13 +79,13 @@ to Powerpoint and spend a day pasting creatives and other data points.
 We really wanted to go after these limitations.
 
 * It’s the most powerful table outside of a spreadsheet. Want to roll up day wise
-data to weeks, months or quarter? Easy peasy.
+  data to weeks, months or quarter? Easy peasy.
 * Want to actually look at the creatives running on your channels and break down
-performance by region, audience or campaigns? Done and done!
+  performance by region, audience or campaigns? Done and done!
 * Would you like to see FB Pixel No.s and compare with Google Analytics/BigQuery
-or Appsflyer all in one table? You got it!
+  or Appsflyer all in one table? You got it!
 * Want to create your own metrics to see how you are measuring up to your monthly
-targets? All in one place.
+  targets? All in one place.
 
 We built powerful collaboration as well. For example, you can now automatically
 schedule creative reports that are auto-updated so your design team can really
@@ -106,6 +107,6 @@ providers. The fact that our customers come from different categories and
 regions tells us that we are solving a global problem, if you want to give us a
 go, [write to us](mailto:sales@granularhq.com)!
 
-*This post was written by [Arun
+_This post was written by [Arun
 Srinivasan](https://www.linkedin.com/in/arun-srinivasan/), the founder and CEO
-of Granular.*
+of Granular._

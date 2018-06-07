@@ -1,13 +1,16 @@
 import React from "react"
 import Helmet from "react-helmet"
+import Link from "gatsby-link"
 import { PostContainer, PostTitle, PostBody, PostMeta } from "../ui"
 
 // import '../css/blog-post.css'; // make it pretty!
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query we'll write in a bit
+  pathContext,
 }) {
   const { markdownRemark: post } = data // data.markdownRemark holds our post data
+  const { next, prev } = pathContext
   return (
     <PostContainer>
       <Helmet
@@ -28,6 +31,18 @@ export default function Template({
       </PostTitle>
       <PostMeta>Published on {post.frontmatter.date}</PostMeta>
       <PostBody dangerouslySetInnerHTML={{ __html: post.html }} />
+      <p>
+        {prev && (
+          <Link to={prev.frontmatter.path}>
+            Previous: {prev.frontmatter.title}
+          </Link>
+        )}
+      </p>
+      <p>
+        {next && (
+          <Link to={next.frontmatter.path}>Next: {next.frontmatter.title}</Link>
+        )}
+      </p>
     </PostContainer>
   )
 }

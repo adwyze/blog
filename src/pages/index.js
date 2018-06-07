@@ -31,6 +31,16 @@ export default function Index({ data }) {
                   </Link>
                 </PreviewList.Title>
                 <PreviewList.Meta>{post.frontmatter.date}</PreviewList.Meta>
+                <PreviewList.Tag>
+                  {post.frontmatter.tags &&
+                    post.frontmatter.tags.map((tag, index) => {
+                      return (
+                        <li key={index}>
+                          <Link to={`/tags/${tag}`}>{tag}</Link>
+                        </li>
+                      )
+                    })}
+                </PreviewList.Tag>
                 <PreviewList.Excerpt>{post.excerpt}</PreviewList.Excerpt>
               </PreviewList.Item>
             )
@@ -51,6 +61,7 @@ export const pageQuery = graphql`
             title
             date(formatString: "MMMM DD, YYYY")
             path
+            tags
           }
         }
       }

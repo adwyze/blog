@@ -4,6 +4,7 @@ date: "2018-02-14"
 title: "Data Gravity — Why Should Marketers Care?"
 description: "How is Data Gravity relevant for the performance marketers of today? Can generic BI tools keep up with vertical solutions?"
 robots: "index, follow"
+tags: ["growth"]
 ---
 
 ![Illustration of data gravity for applications and services

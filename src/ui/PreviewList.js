@@ -31,4 +31,8 @@ const Excerpt = styled.div`
   font-size: 14px;
 `
 
-export { Item, Title, Meta, Excerpt, Wrapper }
+const Tag = styled.ul`
+  font-size: 12px;
+`
+
+export { Item, Title, Meta, Tag, Excerpt, Wrapper }

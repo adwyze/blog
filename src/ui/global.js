@@ -1,20 +1,41 @@
-import { injectGlobal } from "styled-components"
-import AvenirRegular from "../assets/fonts/AvenirNextLTPro-Regular.otf"
-import ProximaRegular from "../assets/fonts/Mark Simonson - Proxima Nova Regular.otf"
+import {
+  injectGlobal
+} from "styled-components"
+import ClarisightsR from "../assets/fonts/clarisights_regular_pro.otf"
+import ClarisightsRI from "../assets/fonts/clarisights_regular_italic_pro.otf"
+import ClarisightsM from "../assets/fonts/clarisights_medium_pro.otf"
+import ClarisightsMI from "../assets/fonts/clarisights_medium_italic_pro.otf"
+import ClarisightsB from "../assets/fonts/clarisights_bold_pro.otf"
+import FrankRuhlLibreR from "../assets/fonts/FrankRuhlLibre-Regular.ttf"
 
-injectGlobal`
+injectGlobal `
 @font-face {
-	font-family: "AvenirNext";
-	src: url('${AvenirRegular}');
+	font-family: "ClarisightsR";
+	src: url('${ClarisightsR}');
 }
 
 @font-face {
-	font-family: "Proxima";
-	src: url('${ProximaRegular}');
+	font-family: "ClarisightsRI";
+	src: url('${ClarisightsRI}');
+}
+
+@font-face {
+	font-family: "ClarisightsM";
+	src: url('${ClarisightsM}');
+}
+
+@font-face {
+	font-family: "ClarisightsMI";
+	src: url('${ClarisightsMI}');
+}
+
+@font-face {
+	font-family: "FrankRuhlLibreR";
+	src: url('${FrankRuhlLibreR}');
 }
 
 html {
-  font-family: sans-serif;
+  font-family: "ClarisightsR", Helvetica, sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -212,10 +233,11 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(0, 0%, 0%, 0.8);
-  font-family: "Proxima", georgia, serif;
+  color: hsla(0, 0%, 0%, 1);
+  font-family: "FrankRuhlLibreR", georgia, serif;
   font-weight: normal;
   word-wrap: break-word;
+  letter-spacing: 0.04rem;
   font-kerning: normal;
   -moz-font-feature-settings: "kern", "liga", "clig", "calt";
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
