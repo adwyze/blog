@@ -7,6 +7,7 @@ import {
   PostBody,
   PostMeta,
   PostHeaderImage,
+  Navigation,
 } from "../ui"
 
 // import '../css/blog-post.css'; // make it pretty!
@@ -39,20 +40,20 @@ export default function Template({
         </PostTitle>
         <PostMeta>Published on {post.frontmatter.date}</PostMeta>
         <PostBody dangerouslySetInnerHTML={{ __html: post.html }} />
-        <p>
+        <Navigation.Wrapper>
           {prev && (
-            <Link to={prev.frontmatter.path}>
-              Previous: {prev.frontmatter.title}
-            </Link>
+            <Navigation.Link>
+              <p style={{ marginBottom: 0 }}>Previous:</p>
+              <Link to={prev.frontmatter.path}>{prev.frontmatter.title}</Link>
+            </Navigation.Link>
           )}
-        </p>
-        <p>
           {next && (
-            <Link to={next.frontmatter.path}>
-              Next: {next.frontmatter.title}
-            </Link>
+            <Navigation.Link>
+              <p style={{ marginBottom: 0 }}>Next:</p>
+              <Link to={next.frontmatter.path}>{next.frontmatter.title}</Link>
+            </Navigation.Link>
           )}
-        </p>
+        </Navigation.Wrapper>
       </PostContainer>
     </div>
   )

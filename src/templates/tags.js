@@ -7,11 +7,11 @@ import Link from "gatsby-link"
 
 const Tags = ({ pathContext, data }) => {
   const { posts, tagName } = pathContext
-
+  const tagNameDisplay = tagName.charAt(0).toUpperCase() + tagName.slice(1)
   if (posts) {
     return (
       <div>
-        <Tag.Header>{tagName}</Tag.Header>
+        <Tag.Header>{tagNameDisplay}</Tag.Header>
         <PreviewList.Wrapper>
           {posts.map((post, index) => {
             return (

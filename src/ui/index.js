@@ -9,6 +9,7 @@ import PostMeta from "./PostMeta"
 import PostHeaderImage from "./PostHeaderImage"
 import BlogFooter from "./BlogFooter"
 import * as Tag from "./Tag"
+import * as Navigation from "./Navigation"
 
 export {
   BlogHeader,
@@ -21,4 +22,5 @@ export {
   PostMeta,
   PostHeaderImage,
   Tag,
+  Navigation,
 }
