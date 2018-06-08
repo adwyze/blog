@@ -31,7 +31,6 @@ const ImgBg = styled.div`
   width: 100%;
   height: 60%;
   z-index: 1;
-  background-image: url();
   position: absolute;
   background-repeat: no-repeat;
   background-position: center;
@@ -48,6 +47,12 @@ const Content = styled.div`
   left: ${props => (props.featured ? "5%" : "2%")};
   padding: 20px;
   border-radius: 4px;
+
+  @media (max-width: 700px) {
+    width: 95%;
+    left: 2%;
+    bottom: 10vh;
+  }
 `
 
 const Title = styled.h1`
@@ -62,6 +67,10 @@ const Title = styled.h1`
     font-size: inherit;
     color: inherit;
     text-decoration: none;
+  }
+
+  @media (max-width: 700px) {
+    font-size: 30px;
   }
 `
 

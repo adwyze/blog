@@ -31,6 +31,12 @@ const ButtonHeader = styled.button`
       opacity: 1;
     }
   }
+
+  @media (max-width: 700px) {
+    &:before {
+      display: none;
+    }
+  }
 `
 
 const Button = styled.button`

@@ -16,14 +16,13 @@ const Header = () => (
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
-        padding: "0 27px",
         marginBottom: "5vh",
       }}>
       <div
         className="logo"
         style={{
           margin: 0,
-          width: 180,
+          width: 200,
         }}>
         <Link
           to="/"

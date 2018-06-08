@@ -5,6 +5,10 @@ const PostTitle = styled.div`
     font-size: 50px;
     padding: 10vh 3vw 0 3vw;
   }
+
+  @media (max-width: 700px) {
+    font-size: 30px;
+  }
 `
 
 export default PostTitle
