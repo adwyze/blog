@@ -6,6 +6,10 @@ import { PreviewList } from "../ui"
 
 export default function Index({ data }) {
   const { edges: posts } = data.allMarkdownRemark
+  const featuredPosts = posts.filter(
+    post =>
+      post.node.frontmatter.title.length > 0 && post.node.frontmatter.featured
+  )
   return (
     <div>
       <Helmet
@@ -19,29 +23,60 @@ export default function Index({ data }) {
           },
         ]}
       />
+      <div>
+        {featuredPosts.map(({ node: post }) => (
+          <PreviewList.Item featured key={post.id}>
+            <PreviewList.ImgBg />
+            <PreviewList.Content featured>
+              <PreviewList.Title featured>
+                <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>
+              </PreviewList.Title>
+              <PreviewList.Meta>{post.frontmatter.date}</PreviewList.Meta>
+              <PreviewList.Tag>
+                {post.frontmatter.tags &&
+                  post.frontmatter.tags.map((tag, index) => {
+                    return (
+                      <li key={index}>
+                        <Link to={`/category/${tag}`}>{tag}</Link>
+                      </li>
+                    )
+                  })}
+              </PreviewList.Tag>
+              <PreviewList.Excerpt>{post.excerpt}</PreviewList.Excerpt>
+            </PreviewList.Content>
+          </PreviewList.Item>
+        ))}
+      </div>
       <PreviewList.Wrapper>
         {posts
-          .filter(post => post.node.frontmatter.title.length > 0)
+          .filter(
+            post =>
+              post.node.frontmatter.title.length > 0 &&
+              !post.node.frontmatter.featured
+          )
           .map(({ node: post }) => {
             return (
               <PreviewList.Item key={post.id}>
-                <PreviewList.Title>
-                  <Link to={post.frontmatter.path}>
-                    {post.frontmatter.title}
-                  </Link>
-                </PreviewList.Title>
-                <PreviewList.Meta>{post.frontmatter.date}</PreviewList.Meta>
-                <PreviewList.Tag>
-                  {post.frontmatter.tags &&
-                    post.frontmatter.tags.map((tag, index) => {
-                      return (
-                        <li key={index}>
-                          <Link to={`/tags/${tag}`}>{tag}</Link>
-                        </li>
-                      )
-                    })}
-                </PreviewList.Tag>
-                <PreviewList.Excerpt>{post.excerpt}</PreviewList.Excerpt>
+                <PreviewList.ImgBg />
+                <PreviewList.Content>
+                  <PreviewList.Title>
+                    <Link to={post.frontmatter.path}>
+                      {post.frontmatter.title}
+                    </Link>
+                  </PreviewList.Title>
+                  <PreviewList.Meta>{post.frontmatter.date}</PreviewList.Meta>
+                  <PreviewList.Tag>
+                    {post.frontmatter.tags &&
+                      post.frontmatter.tags.map((tag, index) => {
+                        return (
+                          <li key={index}>
+                            <Link to={`/category/${tag}`}>{tag}</Link>
+                          </li>
+                        )
+                      })}
+                  </PreviewList.Tag>
+                  <PreviewList.Excerpt>{post.excerpt}</PreviewList.Excerpt>
+                </PreviewList.Content>
               </PreviewList.Item>
             )
           })}
@@ -62,6 +97,8 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             path
             tags
+            headerImg
+            featured
           }
         }
       }

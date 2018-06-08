@@ -4,6 +4,7 @@ date: "2018-01-05"
 title: "The Showdown: Tableau v/s Google Data Studio for Marketers"
 description: "Here are multiple criteria that will help performance marketers compare the market leaders in visualization and dashboards - Tableau and Google Data Studio."
 robots: "index, nofollow"
+headerImg: "https://dl.dropboxusercontent.com/s/kgzdpdwyr3gn7az/bg1.svg?dl=1"
 ---
 
 _To keep things contextual, I will stay focused on marketers in this post.

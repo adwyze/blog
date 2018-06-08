@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Granular Blog`,
+    title: `Clarisights Blog`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -22,7 +22,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://blog.granularhq.com`,
+        siteUrl: `https://clarisights.com/blog`,
       },
     },
   ],

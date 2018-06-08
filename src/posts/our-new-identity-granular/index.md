@@ -5,6 +5,8 @@ title: "Our New Identity - Granular"
 description: "Announcement of Granular's new brand identity and user interface by founder and CEO Arun Srinivasan. What are the problems that Granular is solving for marketers?"
 robots: "index, follow"
 tags: ["growth"]
+featured: true
+headerImg: "https://dl.dropboxusercontent.com/s/kgzdpdwyr3gn7az/bg1.svg?dl=1"
 ---
 
 We have all been there. You stay up all night preparing the presentation for

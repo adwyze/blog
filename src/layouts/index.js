@@ -12,11 +12,11 @@ const Header = () => (
     <div
       style={{
         margin: "0 auto",
-        maxWidth: 960,
-        padding: "1.5rem 1rem",
+        maxWidth: 1080,
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
+        padding: "0 27px",
       }}>
       <div
         className="logo"
@@ -44,21 +44,36 @@ const Header = () => (
           style={{
             margin: "0 10px",
           }}>
-          <Button>Growth</Button>
+          <Button
+            style={{
+              color: "#000000",
+            }}>
+            Growth
+          </Button>
         </Link>
         <Link
           to="/category/engineering"
           style={{
             margin: "0 10px",
           }}>
-          <Button> Engineering </Button>
+          <Button
+            style={{
+              color: "#000000",
+            }}>
+            Engineering
+          </Button>
         </Link>
         <Link
           to="/category/design"
           style={{
             margin: "0 10px",
           }}>
-          <Button> Design </Button>
+          <Button
+            style={{
+              color: "#000000",
+            }}>
+            Design
+          </Button>
         </Link>
       </div>
     </div>
@@ -71,13 +86,12 @@ const TemplateWrapper = ({ children }) => (
     <div
       style={{
         margin: "0 auto",
-        maxWidth: 960,
+        maxWidth: 1080,
         padding: "0px 1.0875rem 1.45rem",
         paddingTop: 0,
       }}>
-      {" "}
-      {children()}{" "}
-    </div>{" "}
+      {children()}
+    </div>
   </div>
 )
 

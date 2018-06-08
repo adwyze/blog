@@ -57,6 +57,8 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
               description
               robots
               tags
+              headerImg
+              featured
             }
           }
         }
