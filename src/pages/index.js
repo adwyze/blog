@@ -24,47 +24,30 @@ export default function Index({ data }) {
         ]}
       />
       <div>
-        {featuredPosts.map(({ node: post }) => (
+        {featuredPosts.map(({ node: post }, index) => (
           <PreviewList.Item featured key={post.id}>
-            <PreviewList.ImgBg />
-            <PreviewList.Content featured>
-              <PreviewList.Title featured>
-                <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>
-              </PreviewList.Title>
-              <PreviewList.Meta>{post.frontmatter.date}</PreviewList.Meta>
-              <PreviewList.Tag>
-                {post.frontmatter.tags &&
-                  post.frontmatter.tags.map((tag, index) => {
-                    return (
-                      <li key={index}>
-                        <Link to={`/category/${tag}`}>{tag}</Link>
-                      </li>
-                    )
-                  })}
-              </PreviewList.Tag>
-              <PreviewList.Excerpt>{post.excerpt}</PreviewList.Excerpt>
-            </PreviewList.Content>
-          </PreviewList.Item>
-        ))}
-      </div>
-      <PreviewList.Wrapper>
-        {posts
-          .filter(
-            post =>
-              post.node.frontmatter.title.length > 0 &&
-              !post.node.frontmatter.featured
-          )
-          .map(({ node: post }) => {
-            return (
-              <PreviewList.Item key={post.id}>
-                <PreviewList.ImgBg />
-                <PreviewList.Content>
-                  <PreviewList.Title>
-                    <Link to={post.frontmatter.path}>
-                      {post.frontmatter.title}
-                    </Link>
-                  </PreviewList.Title>
-                  <PreviewList.Meta>{post.frontmatter.date}</PreviewList.Meta>
+            <Link to={post.frontmatter.path}>
+              <PreviewList.ImgBg source={post.frontmatter.headerImg} />
+              <PreviewList.Content featured>
+                <PreviewList.Title featured>
+                  {post.frontmatter.title}
+                </PreviewList.Title>
+                <PreviewList.Meta>{post.frontmatter.date}</PreviewList.Meta>
+                <PreviewList.Excerpt>
+                  {post.frontmatter.description}
+                </PreviewList.Excerpt>
+                <div
+                  style={{
+                    display: "flex",
+                    fontSize: "0.8rem",
+                    fontFamily: "ClarisightsR",
+                  }}>
+                  {post.frontmatter.writer ? (
+                    <p>
+                      By {post.frontmatter.writer}{" "}
+                      <span style={{ margin: "0 5px" }}>/</span>
+                    </p>
+                  ) : null}
                   <PreviewList.Tag>
                     {post.frontmatter.tags &&
                       post.frontmatter.tags.map((tag, index) => {
@@ -75,8 +58,57 @@ export default function Index({ data }) {
                         )
                       })}
                   </PreviewList.Tag>
-                  <PreviewList.Excerpt>{post.excerpt}</PreviewList.Excerpt>
-                </PreviewList.Content>
+                </div>
+              </PreviewList.Content>
+            </Link>
+          </PreviewList.Item>
+        ))}
+      </div>
+      <PreviewList.Wrapper>
+        {posts
+          .filter(
+            post =>
+              post.node.frontmatter.title.length > 0 &&
+              !post.node.frontmatter.featured
+          )
+          .map(({ node: post }, index) => {
+            return (
+              <PreviewList.Item key={post.id}>
+                <Link to={post.frontmatter.path} key={index}>
+                  <PreviewList.ImgBg source={post.frontmatter.headerImg} />
+                  <PreviewList.Content>
+                    <PreviewList.Title>
+                      {post.frontmatter.title}
+                    </PreviewList.Title>
+                    <PreviewList.Meta>{post.frontmatter.date}</PreviewList.Meta>
+                    <PreviewList.Excerpt>
+                      {post.frontmatter.description}
+                    </PreviewList.Excerpt>
+                    <div
+                      style={{
+                        display: "flex",
+                        fontSize: "0.8rem",
+                        fontFamily: "ClarisightsR",
+                      }}>
+                      {post.frontmatter.writer ? (
+                        <p>
+                          By {post.frontmatter.writer}{" "}
+                          <span style={{ margin: "0 5px" }}>/</span>
+                        </p>
+                      ) : null}
+                      <PreviewList.Tag>
+                        {post.frontmatter.tags &&
+                          post.frontmatter.tags.map((tag, index) => {
+                            return (
+                              <li key={index}>
+                                <Link to={`/category/${tag}`}>{tag}</Link>
+                              </li>
+                            )
+                          })}
+                      </PreviewList.Tag>
+                    </div>
+                  </PreviewList.Content>
+                </Link>
               </PreviewList.Item>
             )
           })}
@@ -97,8 +129,10 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             path
             tags
+            writer
             headerImg
             featured
+            description
           }
         }
       }

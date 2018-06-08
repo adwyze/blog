@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-const PostBody = styled.div `
+const PostBody = styled.div`
   p,
   li,
   code,

@@ -24,7 +24,6 @@ const createTagPages = (createPage, posts) => {
   const tags = Object.keys(postsByTags)
   tags.forEach(tagName => {
     const posts = postsByTags[tagName]
-    console.log("Node", tags)
     createPage({
       path: `/category/${tagName}`,
       component: tagTemplate,
@@ -56,6 +55,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
               title
               description
               robots
+              writer
               tags
               headerImg
               featured

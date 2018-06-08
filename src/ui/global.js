@@ -1,6 +1,4 @@
-import {
-  injectGlobal
-} from "styled-components"
+import { injectGlobal } from "styled-components"
 import ClarisightsR from "../assets/fonts/clarisights_regular_pro.otf"
 import ClarisightsRI from "../assets/fonts/clarisights_regular_italic_pro.otf"
 import ClarisightsM from "../assets/fonts/clarisights_medium_pro.otf"
@@ -8,7 +6,7 @@ import ClarisightsMI from "../assets/fonts/clarisights_medium_italic_pro.otf"
 import ClarisightsB from "../assets/fonts/clarisights_bold_pro.otf"
 import FrankRuhlLibreR from "../assets/fonts/FrankRuhlLibre-Regular.ttf"
 
-injectGlobal `
+injectGlobal`
 @font-face {
 	font-family: "ClarisightsR";
 	src: url('${ClarisightsR}');
@@ -76,7 +74,9 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  color: #1a1a1a;
 }
+
 a:active,
 a:hover {
   outline-width: 0;
@@ -243,6 +243,7 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
+  transition: all 0.45s ease;
 }
 img {
   max-width: 100%;
@@ -265,7 +266,7 @@ h1 {
   padding-top: 0;
   margin-bottom: 1rem;
   color: inherit;
-  font-family: "AvenirNext", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: "ClarisightsM", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: 700;
   text-rendering: optimizeLegibility;
@@ -282,7 +283,7 @@ h2 {
   padding-top: 0;
   margin-bottom: 1rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: "ClarisightsM", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -299,7 +300,7 @@ h3 {
   padding-top: 0;
   margin-bottom: 1rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: "ClarisightsM", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -316,7 +317,7 @@ h4 {
   padding-top: 0;
   margin-bottom: 1rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: "ClarisightsM", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -333,7 +334,7 @@ h5 {
   padding-top: 0;
   margin-bottom: 1rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: "ClarisightsM", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -350,7 +351,7 @@ h6 {
   padding-top: 0;
   margin-bottom: 1rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: "ClarisightsM", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -653,6 +654,11 @@ pre code:after,
 pre tt:before,
 pre tt:after {
   content: "";
+}
+
+button:focus{
+  box-shadow: none;
+  outline:0;
 }
 @media only screen and (max-width: 480px) {
   html {

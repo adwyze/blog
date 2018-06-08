@@ -6,14 +6,21 @@ const Wrapper = styled.div`
 `
 
 const Item = styled.div`
-  border-bottom: 1px solid #efefef;
-  flex-basis: 48%;
-  margin: 1%;
+  flex-basis: 46%;
+  margin: 2%;
+  margin-bottom: 30px;
   position: relative;
   height: 50vh;
   min-height: ${props => (props.featured ? "580px" : "480px")};
   overflow: hidden;
   background: white;
+  border-radius: 4px;
+  transition: transform 0.35s ease;
+  transform: scale(0.98);
+  box-shadow: 0px 0px 37px -5px rgba(235, 235, 235, 1);
+  &:hover {
+    transform: scale(1);
+  }
   @media (max-width: 700px) {
     flex-basis: 100%;
   }
@@ -24,11 +31,12 @@ const ImgBg = styled.div`
   width: 100%;
   height: 60%;
   z-index: 1;
-  padding-top: 40px;
   background-image: url();
   position: absolute;
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center;
+  background-size: cover;
+  background-image: ${props => (props.source ? `url(${props.source});` : "")};
 `
 
 const Content = styled.div`
@@ -39,6 +47,7 @@ const Content = styled.div`
   background: white;
   left: ${props => (props.featured ? "5%" : "2%")};
   padding: 20px;
+  border-radius: 4px;
 `
 
 const Title = styled.h1`
@@ -67,6 +76,20 @@ const Excerpt = styled.div`
 
 const Tag = styled.ul`
   font-size: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  a {
+    text-decoration: none;
+    border: 1px solid #d6e4c5;
+    padding: 2px 10px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+    &:hover {
+      background: #d6e4c5;
+      color: #000000;
+    }
+  }
 `
 
 export { Item, Title, ImgBg, Content, Meta, Tag, Excerpt, Wrapper }

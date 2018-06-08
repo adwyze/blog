@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import Link from "gatsby-link"
 import Helmet from "react-helmet"
 
-import { BlogHeader, Button } from "../ui"
+import { BlogHeader, Button, BlogFooter } from "../ui"
 
 import logo from "../assets/images/Clarisights-blog-logo.svg"
 
@@ -17,6 +17,7 @@ const Header = () => (
         justifyContent: "space-between",
         alignItems: "center",
         padding: "0 27px",
+        marginBottom: "5vh",
       }}>
       <div
         className="logo"
@@ -44,40 +45,115 @@ const Header = () => (
           style={{
             margin: "0 10px",
           }}>
-          <Button
+          <Button.ButtonHeader
             style={{
               color: "#000000",
+              fontFamily: "ClarisightsR",
             }}>
             Growth
-          </Button>
+          </Button.ButtonHeader>
         </Link>
         <Link
           to="/category/engineering"
           style={{
             margin: "0 10px",
           }}>
-          <Button
+          <Button.ButtonHeader
             style={{
               color: "#000000",
+              fontFamily: "ClarisightsR",
             }}>
             Engineering
-          </Button>
+          </Button.ButtonHeader>
         </Link>
         <Link
           to="/category/design"
           style={{
             margin: "0 10px",
           }}>
-          <Button
+          <Button.ButtonHeader
             style={{
               color: "#000000",
+              fontFamily: "ClarisightsR",
             }}>
             Design
-          </Button>
+          </Button.ButtonHeader>
         </Link>
       </div>
     </div>
   </BlogHeader>
+)
+
+const Footer = () => (
+  <BlogFooter>
+    <div
+      style={{
+        margin: "0 auto",
+        maxWidth: 1080,
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        padding: "0 27px",
+        marginBottom: "5vh",
+      }}>
+      <div>
+        <Link
+          to="https://clarisights.com"
+          style={{
+            margin: "0 10px",
+          }}>
+          <Button.Button
+            style={{
+              color: "#000000",
+              fontFamily: "ClarisightsR",
+            }}>
+            clarisights.com
+          </Button.Button>
+        </Link>
+      </div>
+      <div>
+        <Link
+          to="#"
+          style={{
+            margin: "0 10px",
+          }}>
+          <Button.Button
+            style={{
+              color: "#000000",
+              fontFamily: "ClarisightsR",
+            }}>
+            LinkedIn
+          </Button.Button>
+        </Link>
+        <Link
+          to="#"
+          style={{
+            margin: "0 10px",
+          }}>
+          <Button.Button
+            style={{
+              color: "#000000",
+              fontFamily: "ClarisightsR",
+            }}>
+            Facebook
+          </Button.Button>
+        </Link>
+        <Link
+          to="#"
+          style={{
+            margin: "0 10px",
+          }}>
+          <Button.Button
+            style={{
+              color: "#000000",
+              fontFamily: "ClarisightsR",
+            }}>
+            Twitter
+          </Button.Button>
+        </Link>
+      </div>
+    </div>
+  </BlogFooter>
 )
 
 const TemplateWrapper = ({ children }) => (
@@ -92,6 +168,7 @@ const TemplateWrapper = ({ children }) => (
       }}>
       {children()}
     </div>
+    <Footer />
   </div>
 )
 
