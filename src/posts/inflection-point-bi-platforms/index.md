@@ -5,6 +5,7 @@ title: "The Inflection Point for BI Platforms"
 description: "The CRM industry has already begun verticalization, with the success of Veeva. The BI industry is set to be verticalized too, starting with marketing."
 robots: "index, follow"
 tags: ["growth"]
+writer: "Arun Srinivasan"
 headerImg: "https://dl.dropboxusercontent.com/s/kgzdpdwyr3gn7az/bg1.svg?dl=1"
 ---
 
