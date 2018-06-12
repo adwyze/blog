@@ -25,7 +25,7 @@ const Header = () => (
           width: 200,
         }}>
         <Link
-          to="/"
+          to="/blog"
           style={{
             color: "white",
             textDecoration: "none",
@@ -40,7 +40,7 @@ const Header = () => (
       </div>
       <div>
         <Link
-          to="/category/growth"
+          to="/blog/category/growth"
           style={{
             margin: "0 10px",
           }}>
@@ -53,7 +53,7 @@ const Header = () => (
           </Button.ButtonHeader>
         </Link>
         <Link
-          to="/category/engineering"
+          to="/blog/category/engineering"
           style={{
             margin: "0 10px",
           }}>
@@ -66,7 +66,7 @@ const Header = () => (
           </Button.ButtonHeader>
         </Link>
         <Link
-          to="/category/design"
+          to="/blog/category/design"
           style={{
             margin: "0 10px",
           }}>
@@ -112,7 +112,7 @@ const Footer = () => (
       </div>
       <div>
         <Link
-          to="#"
+          to="https://www.linkedin.com/company/clarisightsdr"
           style={{
             margin: "0 10px",
           }}>
@@ -125,7 +125,7 @@ const Footer = () => (
           </Button.Button>
         </Link>
         <Link
-          to="#"
+          to="https://dribbble.com/clarisights"
           style={{
             margin: "0 10px",
           }}>
@@ -134,11 +134,11 @@ const Footer = () => (
               color: "#000000",
               fontFamily: "ClarisightsR",
             }}>
-            Facebook
+            Dribbble
           </Button.Button>
         </Link>
         <Link
-          to="#"
+          to="http://twitter.com/clarisights"
           style={{
             margin: "0 10px",
           }}>

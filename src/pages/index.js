@@ -48,16 +48,16 @@ export default function Index({ data }) {
                       <span style={{ margin: "0 5px" }}>/</span>
                     </p>
                   ) : null}
-                  <PreviewList.Tag>
-                    {post.frontmatter.tags &&
-                      post.frontmatter.tags.map((tag, index) => {
-                        return (
+                  {post.frontmatter.tags &&
+                    post.frontmatter.tags.map((tag, index) => {
+                      return (
+                        <PreviewList.Tag>
                           <li key={index}>
-                            <Link to={`/category/${tag}`}>{tag}</Link>
+                            <Link to={`/blog/category/${tag}`}>{tag}</Link>
                           </li>
-                        )
-                      })}
-                  </PreviewList.Tag>
+                        </PreviewList.Tag>
+                      )
+                    })}
                 </div>
               </PreviewList.Content>
             </Link>
@@ -96,16 +96,16 @@ export default function Index({ data }) {
                           <span style={{ margin: "0 5px" }}>/</span>
                         </p>
                       ) : null}
-                      <PreviewList.Tag>
-                        {post.frontmatter.tags &&
-                          post.frontmatter.tags.map((tag, index) => {
-                            return (
+                      {post.frontmatter.tags &&
+                        post.frontmatter.tags.map((tag, index) => {
+                          return (
+                            <PreviewList.Tag>
                               <li key={index}>
-                                <Link to={`/category/${tag}`}>{tag}</Link>
+                                <Link to={`/blog/category/${tag}`}>{tag}</Link>
                               </li>
-                            )
-                          })}
-                      </PreviewList.Tag>
+                            </PreviewList.Tag>
+                          )
+                        })}
                     </div>
                   </PreviewList.Content>
                 </Link>

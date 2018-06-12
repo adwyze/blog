@@ -22,7 +22,7 @@ export default function Template({
     <div>
       <PostContainer>
         <Helmet
-          title={`${post.frontmatter.title} - Granular Insights Blog`}
+          title={`${post.frontmatter.title} - Clarisights Insights Blog`}
           meta={[
             {
               name: "description",

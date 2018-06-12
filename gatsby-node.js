@@ -25,7 +25,7 @@ const createTagPages = (createPage, posts) => {
   tags.forEach(tagName => {
     const posts = postsByTags[tagName]
     createPage({
-      path: `/category/${tagName}`,
+      path: `/blog/category/${tagName}`,
       component: tagTemplate,
       context: {
         posts,
