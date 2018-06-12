@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: `/blog`,
   siteMetadata: {
     title: `Clarisights Blog`,
   },
@@ -22,7 +23,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://www.clarisights.com/blog`,
+        siteUrl: `https://www.clarisights.com`,
       },
     },
   ],
