@@ -25,7 +25,7 @@ const Header = () => (
           width: 200,
         }}>
         <Link
-          to="/blog"
+          to="/"
           style={{
             color: "white",
             textDecoration: "none",
@@ -40,7 +40,7 @@ const Header = () => (
       </div>
       <div>
         <Link
-          to="/blog/category/growth"
+          to="/category/growth"
           style={{
             margin: "0 10px",
           }}>
@@ -53,7 +53,7 @@ const Header = () => (
           </Button.ButtonHeader>
         </Link>
         <Link
-          to="/blog/category/engineering"
+          to="/category/engineering"
           style={{
             margin: "0 10px",
           }}>
@@ -66,7 +66,7 @@ const Header = () => (
           </Button.ButtonHeader>
         </Link>
         <Link
-          to="/blog/category/design"
+          to="/category/design"
           style={{
             margin: "0 10px",
           }}>
@@ -96,10 +96,11 @@ const Footer = () => (
         marginBottom: "5vh",
       }}>
       <div>
-        <Link
-          to="https://clarisights.com"
+        <a
+          href="http://www.clarisights.com/"
           style={{
             margin: "0 10px",
+            textDecoration: "none",
           }}>
           <Button.Button
             style={{
@@ -108,13 +109,14 @@ const Footer = () => (
             }}>
             clarisights.com
           </Button.Button>
-        </Link>
+        </a>
       </div>
       <div>
-        <Link
-          to="https://www.linkedin.com/company/clarisightsdr"
+        <a
+          href="https://www.linkedin.com/company/clarisights"
           style={{
             margin: "0 10px",
+            textDecoration: "none",
           }}>
           <Button.Button
             style={{
@@ -123,11 +125,12 @@ const Footer = () => (
             }}>
             LinkedIn
           </Button.Button>
-        </Link>
-        <Link
-          to="https://dribbble.com/clarisights"
+        </a>
+        <a
+          href="https://dribbble.com/clarisights"
           style={{
             margin: "0 10px",
+            textDecoration: "none",
           }}>
           <Button.Button
             style={{
@@ -136,11 +139,12 @@ const Footer = () => (
             }}>
             Dribbble
           </Button.Button>
-        </Link>
-        <Link
-          to="http://twitter.com/clarisights"
+        </a>
+        <a
+          href="http://twitter.com/clarisights"
           style={{
             margin: "0 10px",
+            textDecoration: "none",
           }}>
           <Button.Button
             style={{
@@ -149,7 +153,7 @@ const Footer = () => (
             }}>
             Twitter
           </Button.Button>
-        </Link>
+        </a>
       </div>
     </div>
   </BlogFooter>

@@ -666,7 +666,10 @@ button:focus{
   }
 }
 a {
-  text-decoration: none !important;
+  text-decoration: underline !important;
+}
+a:hover{
+  text-decoration: underline !important;
 }
 
 `

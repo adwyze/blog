@@ -1,5 +1,5 @@
 ---
-path: "/blog/monitoring-reporting-errors-sidekiq-jobs"
+path: "/monitoring-reporting-errors-sidekiq-jobs"
 date: "2018-05-31"
 title: "Monitoring and Reporting Errors from Sidekiq Jobs"
 description: "How we do error reporting to minimize the impact of failing background jobs"

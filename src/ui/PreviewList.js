@@ -3,6 +3,7 @@ import styled from "styled-components"
 const Wrapper = styled.div`
   display: flex;
   flex-flow: row wrap;
+  text-decoration: none !important;
 `
 
 const Item = styled.div`
@@ -94,6 +95,7 @@ const Tag = styled.ul`
     padding: 2px 10px;
     border-radius: 4px;
     transition: background 0.3s ease;
+    text-decoration: none !important;
     &:hover {
       background: #d6e4c5;
       color: #000000;

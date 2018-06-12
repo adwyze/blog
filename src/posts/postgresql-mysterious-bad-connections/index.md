@@ -1,5 +1,5 @@
 ---
-path: "/blog/postgresql-mysterious-bad-connections"
+path: "/postgresql-mysterious-bad-connections"
 date: "2018-05-24"
 title: "Postgresql — mysterious bad connections issue post Rails 5.2"
 description: "How monitoring helped us debug a bad connections issue after a Rails upgrade."

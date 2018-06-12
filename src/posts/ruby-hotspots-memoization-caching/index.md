@@ -1,5 +1,5 @@
 ---
-path: "/blog/ruby-hotspots-memoization-caching"
+path: "/ruby-hotspots-memoization-caching"
 date: "2018-05-25"
 title: "Ruby Hotspots: Finding avenues for Memoization and Caching"
 description: "How we found and eliminated hotspots in our  RoR code using caching and memoization."

@@ -13,13 +13,13 @@ export default function Index({ data }) {
   return (
     <div>
       <Helmet
-        title="Granular Insights Blog"
+        title="Clarisights Insights Blog"
         meta={[
           { name: "description", content: "marketing insights for humans" },
           {
             name: "keywords",
             content:
-              "marketing, visualisation, granular, ads, tableau, data studio, quicksight",
+              "clarisights, marketing, visualisation, granular, ads, tableau, data studio, quicksight",
           },
         ]}
       />
@@ -53,7 +53,7 @@ export default function Index({ data }) {
                       return (
                         <PreviewList.Tag>
                           <li key={index}>
-                            <Link to={`/blog/category/${tag}`}>{tag}</Link>
+                            <Link to={`/category/${tag}`}>{tag}</Link>
                           </li>
                         </PreviewList.Tag>
                       )
@@ -96,12 +96,13 @@ export default function Index({ data }) {
                           <span style={{ margin: "0 5px" }}>/</span>
                         </p>
                       ) : null}
+                      {console.log("Tag", post.frontmatter.tags)}
                       {post.frontmatter.tags &&
                         post.frontmatter.tags.map((tag, index) => {
                           return (
                             <PreviewList.Tag>
                               <li key={index}>
-                                <Link to={`/blog/category/${tag}`}>{tag}</Link>
+                                <Link to={`/category/${tag}`}>{tag}</Link>
                               </li>
                             </PreviewList.Tag>
                           )
