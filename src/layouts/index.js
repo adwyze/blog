@@ -2,22 +2,27 @@ import React from "react"
 import PropTypes from "prop-types"
 import Link from "gatsby-link"
 import Helmet from "react-helmet"
+import styled from "styled-components"
 
 import { BlogHeader, Button, BlogFooter } from "../ui"
 
 import logo from "../assets/images/Clarisights-blog-logo.svg"
 
+const Container = styled.div`
+  margin: 0 auto;
+  max-width: 1080px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5vh;
+  @media (max-width: 700px) {
+    flex-direction: column;
+  }
+`
+
 const Header = () => (
   <BlogHeader>
-    <div
-      style={{
-        margin: "0 auto",
-        maxWidth: 1080,
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-        marginBottom: "5vh",
-      }}>
+    <Container>
       <div
         className="logo"
         style={{
@@ -79,22 +84,13 @@ const Header = () => (
           </Button.ButtonHeader>
         </Link>
       </div>
-    </div>
+    </Container>
   </BlogHeader>
 )
 
 const Footer = () => (
   <BlogFooter>
-    <div
-      style={{
-        margin: "0 auto",
-        maxWidth: 1080,
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-        padding: "0 27px",
-        marginBottom: "5vh",
-      }}>
+    <Container>
       <div>
         <a
           href="http://www.clarisights.com/"
@@ -155,7 +151,7 @@ const Footer = () => (
           </Button.Button>
         </a>
       </div>
-    </div>
+    </Container>
   </BlogFooter>
 )
 
