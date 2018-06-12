@@ -47,8 +47,8 @@ const Tags = ({ pathContext, data }) => {
                     {post.frontmatter.tags &&
                       post.frontmatter.tags.map((tag, index) => {
                         return (
-                          <PreviewList.Tag>
-                            <li key={index}>
+                          <PreviewList.Tag key={index}>
+                            <li>
                               <Link to={`/category/${tag}`}>{tag}</Link>
                             </li>
                           </PreviewList.Tag>

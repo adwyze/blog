@@ -54,8 +54,8 @@ export default function Index({ data }) {
                 {post.frontmatter.tags &&
                   post.frontmatter.tags.map((tag, index) => {
                     return (
-                      <PreviewList.Tag>
-                        <li key={index}>
+                      <PreviewList.Tag key={index}>
+                        <li>
                           <Link to={`/category/${tag}`}>{tag}</Link>
                         </li>
                       </PreviewList.Tag>
@@ -107,8 +107,8 @@ export default function Index({ data }) {
                     {post.frontmatter.tags &&
                       post.frontmatter.tags.map((tag, index) => {
                         return (
-                          <PreviewList.Tag>
-                            <li key={index}>
+                          <PreviewList.Tag key={index}>
+                            <li>
                               <Link to={`/category/${tag}`}>{tag}</Link>
                             </li>
                           </PreviewList.Tag>
