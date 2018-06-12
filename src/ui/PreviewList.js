@@ -19,6 +19,7 @@ const Item = styled.div`
   transition: transform 0.35s ease;
   transform: scale(0.98);
   box-shadow: 0px 0px 37px -5px rgba(235, 235, 235, 1);
+  text-decoration: none !important;
   &:hover {
     transform: scale(1);
   }
@@ -48,7 +49,7 @@ const Content = styled.div`
   left: ${props => (props.featured ? "5%" : "2%")};
   padding: 20px;
   border-radius: 4px;
-
+  text-decoration: none !important;
   @media (max-width: 700px) {
     width: 95%;
     left: 2%;
@@ -62,26 +63,32 @@ const Title = styled.h1`
   a {
     font-size: inherit;
     color: #000;
-    text-decoration: none;
+    text-decoration: none !important;
   }
   a:hover {
     font-size: inherit;
     color: inherit;
-    text-decoration: none;
+    text-decoration: underline !important;
   }
 
   @media (max-width: 700px) {
     font-size: 30px;
+  }
+  text-decoration: none !important;
+  :hover {
+    text-decoration: underline !important;
   }
 `
 
 const Meta = styled.div`
   font-size: 12px;
   color: #a1a1a1;
+  text-decoration: none !important;
 `
 
 const Excerpt = styled.div`
   font-size: 14px;
+  text-decoration: none !important;
 `
 
 const Tag = styled.ul`

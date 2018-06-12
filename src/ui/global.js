@@ -9,27 +9,27 @@ import FrankRuhlLibreR from "../assets/fonts/FrankRuhlLibre-Regular.ttf"
 injectGlobal`
 @font-face {
 	font-family: "ClarisightsR";
-	src: url('${ClarisightsR}');
+	src: url('${ClarisightsR}') format("opentype");
 }
 
 @font-face {
 	font-family: "ClarisightsRI";
-	src: url('${ClarisightsRI}');
+	src: url('${ClarisightsRI}') format("opentype");
 }
 
 @font-face {
 	font-family: "ClarisightsM";
-	src: url('${ClarisightsM}');
+	src: url('${ClarisightsM}') format("opentype");
 }
 
 @font-face {
 	font-family: "ClarisightsMI";
-	src: url('${ClarisightsMI}');
+	src: url('${ClarisightsMI}') format("opentype");
 }
 
 @font-face {
 	font-family: "FrankRuhlLibreR";
-	src: url('${FrankRuhlLibreR}');
+	src: url('${FrankRuhlLibreR}') format("opentype");
 }
 
 html {
