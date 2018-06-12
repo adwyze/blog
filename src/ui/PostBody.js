@@ -16,6 +16,9 @@ const PostBody = styled.div`
       padding: 0 5px;
     }
   }
+  a {
+    text-decoration: underline !important;
+  }
 `
 
 export default PostBody

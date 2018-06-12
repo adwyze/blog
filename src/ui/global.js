@@ -666,7 +666,7 @@ button:focus{
   }
 }
 a {
-  text-decoration: underline !important;
+  text-decoration: none;
 }
 a:hover{
   text-decoration: underline !important;

@@ -20,9 +20,6 @@ const Item = styled.div`
   transform: scale(0.98);
   box-shadow: 0px 0px 37px -5px rgba(235, 235, 235, 1);
   text-decoration: none !important;
-  &:hover {
-    transform: scale(1);
-  }
   @media (max-width: 700px) {
     flex-basis: 100%;
   }
@@ -60,23 +57,18 @@ const Content = styled.div`
 const Title = styled.h1`
   margin-bottom: 0.5rem;
   font-size: ${props => (props.featured ? "2.5rem" : "1.7rem")};
-  a {
-    font-size: inherit;
-    color: #000;
-    text-decoration: none !important;
-  }
-  a:hover {
-    font-size: inherit;
-    color: inherit;
-    text-decoration: underline !important;
-  }
 
   @media (max-width: 700px) {
     font-size: 30px;
   }
   text-decoration: none !important;
-  :hover {
+  &:hover {
     text-decoration: underline !important;
+  }
+
+  &:hover ${Item} : {
+    transform: scale(1) !important;
+    background: "red" !important;
   }
 `
 
