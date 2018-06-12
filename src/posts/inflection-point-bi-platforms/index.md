@@ -1,5 +1,5 @@
 ---
-path: "/the-inflection-point-for-bi-platforms"
+path: "/blog/the-inflection-point-for-bi-platforms"
 date: "2018-01-01"
 title: "The Inflection Point for BI Platforms"
 description: "The CRM industry has already begun verticalization, with the success of Veeva. The BI industry is set to be verticalized too, starting with marketing."

@@ -1,5 +1,5 @@
 ---
-path: "/postgresql-mysterious-bad-connections"
+path: "/blog/postgresql-mysterious-bad-connections"
 date: "2018-05-24"
 title: "Postgresql — mysterious bad connections issue post Rails 5.2"
 description: "How monitoring helped us debug a bad connections issue after a Rails upgrade."
@@ -8,6 +8,7 @@ writer: "Ankur Gupta"
 headerImg: "https://dl.dropboxusercontent.com/s/kgzdpdwyr3gn7az/bg1.svg?dl=1"
 tags: ["engineering"]
 ---
+
 # The Problem
 
 We have a Rails backend and use Postgresql as our OLTP db. About a month back, we moved to Rails 5.2. Ever since we noticed that our queries to PG in our background jobs will randomly fail. Errors would look like PG::ConnectionBad: PQconsumeInput(). These errors in particular used to come when we used to do _find-each_ on large tables. So we thought may be queries are taking time and we need to optimize them. But then the error started appearing randomly in almost every job regardless of table size. This is when we realized that it has nothing to do with our background jobs but more of a server issue. Since we have thousands of jobs running through out the day, we use PGBouncer to manage the number of connections we open to PG. In pre-Rails 5.2 world, we were using transaction based pooling in PGBouncer and our max connections to PG was a mere 25. Hence we never had this problem. But after Rails 5.2, we were forced to move to session pooling as 5.2 started throwing errors and our migrations were failing. In session pooling mode, PGBouncer needs to open lot more connections to PG than before. Hence we changed the _max-connections_ in postgresql.conf to 1000 post Rails 5.2 upgrade. Things were fine initially but as mentioned earlier, we started seeing PG connection bad issue repeatedly across all our jobs.
