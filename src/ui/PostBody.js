@@ -9,7 +9,6 @@ const PostBody = styled.div`
   div {
     font-size: 21px;
     line-height: 1.58;
-    padding: 0 10vh;
     color: #1a1a1a;
 
     @media (max-width: 700px) {

@@ -26,7 +26,7 @@ const Item = styled.div`
 `
 
 const ImgBg = styled.div`
-  background-color: #dcb8c0;
+  background-color: #5ab190;
   width: 100%;
   height: 60%;
   z-index: 1;
