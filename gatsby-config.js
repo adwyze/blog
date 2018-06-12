@@ -22,7 +22,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `http://www.clarisights.com/blog`,
+        siteUrl: `https://www.clarisights.com/blog`,
       },
     },
   ],
