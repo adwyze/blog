@@ -1,5 +1,5 @@
 ---
-path: "/our-new-identity-granular"
+path: "/our-new-identity-clarisights"
 date: "2018-03-12"
 title: "Our New Identity - Clarisights"
 description: "Announcement of Clarisights' new brand identity and user interface by founder and CEO Arun Srinivasan. What are the problems that Granular is solving for marketers?"
@@ -112,4 +112,4 @@ go, [write to us](mailto:sales@granularhq.com)!
 
 _This post was written by [Arun
 Srinivasan](https://www.linkedin.com/in/arun-srinivasan/), the founder and CEO
-of Granular._
+of Clarisights._
