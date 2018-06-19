@@ -98,9 +98,9 @@ product need + budgets to pull this off.
 This post was originally written on
 _[LinkedIn](https://www.linkedin.com/pulse/inflection-point-bi-platforms-arun-srinivasan/)_
 by _[Arun Srinivasan](https://www.linkedin.com/in/arun-srinivasan/)_, Founder
-and CEO of _[Granular](https://granularhq.com/)_. Granular helps _[performance
-marketers](https://granularhq.com/marketers.html)_ and _[digital
-agencies](https://granularhq.com/agencies.html)_ eliminate the ETL process and
+and CEO of _[Clarisights](https://clarisights.com/)_. Clarisights helps _[performance
+marketers](https://clarisights.com/marketers)_ and _[digital
+agencies](https://clarisights.com/agencies)_ eliminate the ETL process and
 automate data collection, normalization and reporting for all advertising and
 analytics channels. It also empowers you to get deep insights from marketing
 data that can create long-term business impact.
