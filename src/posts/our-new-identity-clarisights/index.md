@@ -67,7 +67,7 @@ could roll it out to a larger group of customers. For the last couple of months
 we have been hard at work and we are finally ready to launch.
 
 While it’s hard to remain objective we are incredibly proud of what we built and
-we can’t wait to share it with you. We are calling it Granular.
+we can’t wait to share it with you. We are calling it Clarisights.
 
 The success of Coda and Airtable tells us that strong incumbents can be
 challenged and they have been a great source of inspiration for us.
@@ -99,16 +99,16 @@ piped in at the most granular level automagically mapped to your web or mobile
 analytics channels or internal transaction DB. To ensure you have real time view
 of your data, we auto-update data at 15/30 min intervals.
 
-We are confident you will enjoy working with Granular and while it would be
+We are confident you will enjoy working with Clarisights and while it would be
 presumptuous to say that we have are the best product out there for marketing
-reporting, if you do decide to give Granular a spin, we are sure you will
+reporting, if you do decide to give Clarisights a spin, we are sure you will
 appreciate the level of detail that went into building it.
 
 We are working with a mix of clients like one of the world’s largest performance
 agency, some of the fastest growing e-tailers, education and streaming
 providers. The fact that our customers come from different categories and
 regions tells us that we are solving a global problem, if you want to give us a
-go, [write to us](mailto:sales@granularhq.com)!
+go, [write to us](mailto:hello@clarisights.com)!
 
 _This post was written by [Arun
 Srinivasan](https://www.linkedin.com/in/arun-srinivasan/), the founder and CEO
