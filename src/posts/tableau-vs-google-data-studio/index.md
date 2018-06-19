@@ -85,7 +85,7 @@ version every time a new dimension or metric needs to be added, or changes made
 in reports.
 
 _Want to speak about automating all of your marketing reporting and insights,
-without needing data warehouses? Granular empowers you with advertising data
+without needing data warehouses? Clarisights empowers you with advertising data
 joined to analytics/conversions at the highest possible granularity for each
 platform, in real-time._ [Schedule a
 call.](http://app.hubspot.com/meetings/sumangal-vinjamuri)
@@ -143,9 +143,9 @@ makes sense.
 How much of an investment (money and time!) are you willing to
 make? Are you willing to sacrifice broader functionality to save costs?
 
-We at Granular are attempting to solve the marketing data problem by building
+We at Clarisights are attempting to solve the marketing data problem by building
 a reporting and exploration platform for **[performance
-marketers](http://granularhq.com/marketers.html)** and
-**[agencies](http://granularhq.com/agencies.html)**. To know more, **[visit our
-website](http://www.granularhq.com/)** or **[schedule a
+marketers](http://clarisights.com/marketers)** and
+**[agencies](http://clarisights.com/agencies)**. To know more, **[visit our
+website](http://www.clarisights.com/)** or **[schedule a
 call](https://app.hubspot.com/meetings/sumangal-vinjamuri)**.
