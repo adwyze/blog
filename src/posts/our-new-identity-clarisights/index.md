@@ -2,7 +2,7 @@
 path: "/our-new-identity-clarisights"
 date: "2018-03-12"
 title: "Our New Identity - Clarisights"
-description: "Announcement of Clarisights' new brand identity and user interface by founder and CEO Arun Srinivasan. What are the problems that Granular is solving for marketers?"
+description: "Announcement of Clarisights' new brand identity and user interface by founder and CEO Arun Srinivasan."
 robots: "index, follow"
 tags: ["growth"]
 featured: true
