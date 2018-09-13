@@ -9,7 +9,7 @@ headerImg: "https://dl.dropboxusercontent.com/s/kgzdpdwyr3gn7az/bg1.svg?dl=1"
 tags: ["engineering"]
 ---
 
-Like most fast growing startups building the next generation technical platform, we, at Granular Insights engineering, are always trying to balance the speed with which we push out new features and finding ways for the performance of the system to keep pace with this speed.
+Like most fast growing startups building the next generation technical platform, we, at Clarisights engineering, are always trying to balance the speed with which we push out new features and finding ways for the performance of the system to keep pace with this speed.
 
 There are standard established techniques for scaling any distributed system like _horizontal scaling, query optimization, caching_ etc. A _shared distributed cache_ forms an integral part of any scalable distributed system and can provide huge benefits in both latency and throughput by acting as a very fast middleman between the application and the database.
 
