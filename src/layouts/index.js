@@ -45,19 +45,6 @@ const Header = () => (
       </div>
       <div>
         <Link
-          to="/category/growth"
-          style={{
-            margin: "0 10px",
-          }}>
-          <Button.ButtonHeader
-            style={{
-              color: "#000000",
-              fontFamily: "ClarisightsR",
-            }}>
-            Growth
-          </Button.ButtonHeader>
-        </Link>
-        <Link
           to="/category/engineering"
           style={{
             margin: "0 10px",
@@ -68,6 +55,19 @@ const Header = () => (
               fontFamily: "ClarisightsR",
             }}>
             Engineering
+          </Button.ButtonHeader>
+        </Link>
+        <Link
+          to="/category/growth"
+          style={{
+            margin: "0 10px",
+          }}>
+          <Button.ButtonHeader
+            style={{
+              color: "#000000",
+              fontFamily: "ClarisightsR",
+            }}>
+            Growth
           </Button.ButtonHeader>
         </Link>
         <Link
