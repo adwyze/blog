@@ -6,7 +6,7 @@ description: "A small note thanking the early adopters of Clarisights."
 robots: "index, follow"
 writer: "Pranav Revankar"
 headerImg: "https://cdn-images-1.medium.com/max/800/1*FugD0FypTuosNudXw4qCYw.jpeg"
-tags: ["customers"]
+tags: ["growth"]
 ---
 
 I spend my days helping our users navigate through the tad complex product that we are building at Clarisights. My experience over the last year has taught me that if you’re an early adopter, you are destined to encounter challenges. You might get the latest and greatest new OS on your phones before all of your friends, but there’s a good chance that the shiny new features might accidentally stop working leaving you disconnected from the world. Things will crash, capacities will be tested, bugs will surface, and sadness will occur. But if you’re lucky, the fruits of your frustration will eventually flourish into something amazing that your technophobe friends like me will crave while they spin the wheels on their rotary dial phones.

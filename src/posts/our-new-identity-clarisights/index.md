@@ -5,7 +5,6 @@ title: "Our New Identity - Clarisights"
 description: "Announcement of Clarisights' new brand identity and user interface by founder and CEO Arun Srinivasan."
 robots: "index, follow"
 tags: ["growth"]
-featured: true
 writer: "Arun Srinivasan"
 headerImg: "https://dl.dropboxusercontent.com/s/itdzinz5s75tort/bg2.svg?dl=1"
 ---

@@ -4,6 +4,7 @@ date: "2018-06-12"
 title: "Scaling Backend 100x"
 description: "Techniques applied for scaling backend 100X."
 robots: "index, follow"
+featured: true
 writer: "Ankur Gupta"
 headerImg: "https://cdn-images-1.medium.com/max/1600/1*NT_T9udwCZwHTWBvCNFXfQ.jpeg"
 tags: ["engineering"]

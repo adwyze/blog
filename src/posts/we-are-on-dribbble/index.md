@@ -1,6 +1,6 @@
 ---
 path: "/we-are-on-dribbble"
-date: "30th May, 2018"
+date: "2018-05-30"
 title: "We are on Dribbble"
 description: "We love design. And we are keen to share our ideas with the design community and seek feedback."
 robots: "index, nofollow"
