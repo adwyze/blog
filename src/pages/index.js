@@ -13,7 +13,7 @@ export default function Index({ data }) {
   return (
     <div>
       <Helmet
-        title="Clarisights Insights Blog"
+        title="Clarisights Blog"
         meta={[
           { name: "description", content: "marketing insights for humans" },
           {
