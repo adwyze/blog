@@ -124,4 +124,4 @@ While we are super proud of what we have achieved so far and thankful to our uni
 
 Ciao.
 
-PS: If you want your Mondays to be awesome, want to be in a state where you look forward to coming to office each day, and want to solve exciting problems like above then [<u>apply here</u>](https://angel.co/granular-4/jobs/337007-senior-backend-engineer) to join our team!
+PS: If you want your Mondays to be awesome, want to be in a state where you look forward to coming to office each day, and want to solve exciting problems like above then [<u>apply here</u>](https://www.clarisights.com/careers/openings) to join our team!
