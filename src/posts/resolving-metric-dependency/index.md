@@ -6,12 +6,12 @@ description: "This blogpost gives an overview of how we tackled the problem of m
 robots: "index, nofollow"
 tags: ["engineering"]
 writer: "Prashant Vithani"
-headerImg: "https://www.popsci.com/sites/popsci.com/files/styles/655_1x_/public/images/2018/08/oak-tree-2018822_1920.jpg?itok=jLrEZgp4&fc=50,50"
+headerImg: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1895&q=80"
 ---
 
 At Clarisights we are building an automated BI platform. Our goal is to help non-SQL literate business users to ask questions about their data at the deepest granularity without worrying about pipelines, data de-normalization or writing complex queries. We enable customers to create “custom metrics” which is a way for them to define KPIs (Key Performance Indicators) on top of base metrics from marketing data sources. These “custom metrics” are used to perform complex arithmetic and conditional operations on metrics across multiple data sources, and users can define them quite easily from the interface.
 
-![A typical custom metric evaluation](https://cdn-images-1.medium.com/max/7680/1*eAyDefdCNo1GNv0iL88fJQ.jpeg) <center>*A typical custom metric evaluation*</center>
+![A typical custom metric evaluation](https://cdn-images-1.medium.com/max/7680/1*eAyDefdCNo1GNv0iL88fJQ.jpeg) <center>_A typical custom metric evaluation_</center>
 
 A typical query can have several custom metrics, each depending on other custom metrics and it can touch 10s of millions of rows per data source. The aggregated results from data sources go through 100s of thousands of complex expression evaluation while fulfilling interactive SLAs.
 
@@ -23,7 +23,7 @@ Our 1st version was extremely basic, It only allowed two operations ‘sum’ an
 
     (a + b) * c had to be written as a * c + b * c
 
-To define a ratio, the user had to specify numerator and denominator expressions separately, which is not particularly intuitive e.g. The expression (a / b) * c would be defined as:
+To define a ratio, the user had to specify numerator and denominator expressions separately, which is not particularly intuitive e.g. The expression (a / b) \* c would be defined as:
 
     { numerator: "a * c", denominator: "b" }
 
@@ -45,7 +45,7 @@ We tackled some of the performance problems using recursion. In cases where a cu
 
     cm = base_metric1 + base_metric2 + base_metric2
 
-We used the ruby gem [dentaku](https://github.com/rubysolo/dentaku) which is the arithmetic & logical expression evaluation library. The recursion is performed on AST until it reaches the leaf nodes, which are base metrics. The limitations of V1 had also been addressed in this version such as adding support for brackets, deprecation of “numerator” and “denominator” — single string expression, support of all operators (+, -, *, /). In addition to this, on the fly validations were added to call out bad input.
+We used the ruby gem [dentaku](https://github.com/rubysolo/dentaku) which is the arithmetic & logical expression evaluation library. The recursion is performed on AST until it reaches the leaf nodes, which are base metrics. The limitations of V1 had also been addressed in this version such as adding support for brackets, deprecation of “numerator” and “denominator” — single string expression, support of all operators (+, -, \*, /). In addition to this, on the fly validations were added to call out bad input.
 
 While this was a significant improvement, as usage increased we found newer use cases which we had not accounted for in metrics, where a custom metric is a combination of base metrics from multiple different channels and is also a ratio. When the metric definition contains a ratio, the computation of the final value of the metric must not be part of the aggregation query as it will yield calculated ratio of a metric which cannot be merged with the ratio of the same metric from another data source. Consider below example:
 
@@ -55,10 +55,10 @@ While this was a significant improvement, as usage increased we found newer use 
     spend = search spend + social spend
 
     What happens in the V2:
-    - Facebook returns the computed number of revenue/spend; 
+    - Facebook returns the computed number of revenue/spend;
       effectively (web revenue + app revenue)/(social spend)
 
-    - Google Ads returns the value of number of revenue/spend; 
+    - Google Ads returns the value of number of revenue/spend;
       effectively (web revenue + app revenue)/(search spend)
 
     - Final result is Result(Facebook) + Result (Google Ads),
@@ -71,7 +71,7 @@ While this was a significant improvement, as usage increased we found newer use 
     - Google Ads returns the value of –
       web revenue, app revenue and search spend separately
 
-    - Final value i.e. 
+    - Final value i.e.
       (web revenue + app revenue)/(search spend + social spend)
       is computed in Ruby instead of at DB level.
 
@@ -83,13 +83,13 @@ To address this, we designed our current system which uses topological sort of D
 
 The custom metrics are not pre-calculated and stored while fetching the reports from API but are computed on-the-fly when the user opens a report which contains the custom metric. The primary reasons for this restriction are,
 
-* The formula of the metrics can be changed at any point.
+- The formula of the metrics can be changed at any point.
 
-* The value of a custom metric is dependent on the arbitrary dimension groups & date ranges in the query.
+- The value of a custom metric is dependent on the arbitrary dimension groups & date ranges in the query.
 
 The cross data source custom metrics needs to follow the topological order in order to get the correct value. The diagram below explains what happens when the user makes a request for a custom metric. Here, we assume that the request contains only one nested custom metric having multiple levels of custom metric dependencies. Each node (A, B, C, D, E) represents a metric and the edge represents dependency of a metric on another.
 
-![Interactive request life-cycle highlighting custom metric computation.](https://cdn-images-1.medium.com/max/3840/1*VJuppTdC4PBOa3jwdqZ7Ow.gif) <center> *Interactive request life-cycle highlighting custom metric computation.* </center>
+![Interactive request life-cycle highlighting custom metric computation.](https://cdn-images-1.medium.com/max/3840/1*VJuppTdC4PBOa3jwdqZ7Ow.gif) <center> _Interactive request life-cycle highlighting custom metric computation._ </center>
 
 When a group of custom metrics is requested, a dependency graph (DAG) is built, and the leaf nodes of the graph (Node E in the above image) are the base metrics. Once the graph is built, the leaf nodes (base metrics) are extracted and pushed to the per data source aggregator, which accumulates and returns the metrics grouped by selected dimensions in the given date range. Once the aggregated base metrics from all data sources are computed, they are seeded to topological sort iterator, which starting from the lowest level, computes the dependencies one-by-one before it computes the nested metrics.
 
@@ -101,11 +101,11 @@ The performance of the metric computation directly depends on the degree of nest
 
 Now, if we take the above example, it has 3 levels of nesting (7 metrics in total). The last level is always base metrics, which form the starting point of the iterator. The base metrics are always computed by the aggregator at DB level, so there’s no computation that the iterator needs to do. The iterator will loop over once for each subsequent metric and evaluate each metric separately in the graph. i.e.
 
-**level-1:** web revenue, app revenue, social spend and search spend; 
-**level-2:** revenue, spend; and 
+**level-1:** web revenue, app revenue, social spend and search spend;
+**level-2:** revenue, spend; and
 **level-3**: RoI; for each aggregated row.
 
-If there are 5000 rows, the total number of expression evaluations for this example will be **5000 rows * 7 iterations for metric evaluations per row = 35,000**. In the worst case that we encountered, the total number of expression evaluations per row was around 65 — that means 3,25,000 evaluations (Lot more additional mathematical operation based on the expression internally handled by the dentaku library) per request. Given that it’s pure computation task and no IO operations are involved, there’s no way to run it concurrently because of [GIL](https://en.wikipedia.org/wiki/Global_interpreter_lock) in Ruby as only one native thread can execute at a time.
+If there are 5000 rows, the total number of expression evaluations for this example will be **5000 rows \* 7 iterations for metric evaluations per row = 35,000**. In the worst case that we encountered, the total number of expression evaluations per row was around 65 — that means 3,25,000 evaluations (Lot more additional mathematical operation based on the expression internally handled by the dentaku library) per request. Given that it’s pure computation task and no IO operations are involved, there’s no way to run it concurrently because of [GIL](https://en.wikipedia.org/wiki/Global_interpreter_lock) in Ruby as only one native thread can execute at a time.
 
 To overcome this problem, we are exploring different options to move this part of the application. However, GIL continues to be the problem in Ruby-MRI, so we have moved this part to the immediate alternative JRuby in order to avoid rewriting this piece. We also get the advantage of the direct use of third-party Java libraries by using JRuby. Of course, we will face the issues from both Rails and JVM, but that should be manageable for now.
 

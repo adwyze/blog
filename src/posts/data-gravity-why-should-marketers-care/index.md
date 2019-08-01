@@ -41,7 +41,7 @@ begun to adapt and launched their own BI Applications like Amazon’s QuickSight
 and Microsoft’s PowerBI. These solutions sit right on top of the data and
 perform a lot better than legacy solutions.
 
-In a world where marketing leaders will spend more than **$100 billion** by 2019
+In a world where marketing leaders will spend more than **\$100 billion** by 2019
 on search, display, social, and email marketing — a figure that surpasses
 broadcast and cable television spend
 ([Source](https://www.recode.net/2014/11/17/12064372/the-marketing-industry-has-a-big-data-problem))
@@ -95,7 +95,7 @@ the data is, but also has all of the marketing context built-in — to work with
 Marketing that is always-on rather than BI systems which were built primarily
 for historical analysis.
 
-**That’s exactly what we at Granular are building.** Some of the largest
+**That’s exactly what we at Clarisights are building.** Some of the largest
 data-driven companies and agencies around the world have been able to transform
-the way they leverage their marketing data, using Granular. To know more, [get
-in touch](mailto:sales@granularhq.com)!
+the way they leverage their marketing data, using Clarisights. To know more, [get
+in touch](mailto:growth@clarisights.com)!
