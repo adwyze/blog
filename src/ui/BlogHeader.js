@@ -4,7 +4,7 @@ import bg from "../assets/images/bg1.svg"
 const BlogHeader = styled.div`
   background-color: #ffffff;
   height: 80px;
-  padding: 10px 0;
+  padding: 20px 0 10px 0;
 
   @media (max-width: 700px) {
     height: 160px;

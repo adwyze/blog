@@ -28,6 +28,7 @@ const Header = () => (
         style={{
           margin: 0,
           width: 200,
+          paddintTop: 5,
         }}>
         <Link
           to="/"
